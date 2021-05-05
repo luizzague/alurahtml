@@ -8,14 +8,19 @@ body {
 
 }
 
+.tituloprincipal {
+    padding-left: 20px;
+}
+
 .principal {
     background-color: #cccccc;
     padding: 30px;
 }
 
-h1 {
+.titulocentralizado {
 
-    text-align: center; background-color: #cccccc;
+    text-align: center; 
+    
 }
 
 p { 
@@ -26,10 +31,6 @@ p {
 em strong {
     color: red;
 
-}
-
-h2{
-    text-align: center;
 }
 
 .beneficios {
