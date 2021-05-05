@@ -1,9 +1,29 @@
+body {
+
+    background-color: #cccccc; 
+}
+
+#banner {
+    width: 100%; 
+
+}
+
+h1 {
+
+    text-align: center; background-color: #cccccc;
+}
+
 p { 
     text-align: center;
        
 }
 
-body {
+#missao {
+    font-size: 20px
 
-    background-color: #cccccc; 
+}
+
+em strong {
+    color: red;
+
 }
