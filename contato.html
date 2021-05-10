@@ -24,45 +24,72 @@
         <main>
             <form>
                 <label for="nomesobrenome"> Nome e Sobrenome </label>
-                <input type="text" id="nomesobrenome" class="input-padrao">
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
 
                 <label for="email"> Email </label>
-                <input type="text" id="email" class="input-padrao">
+                <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com">
 
                 <label for="telefone"> Telefone </label>
-                <input type="number" id="telefone" class="input-padrao">
+                <input type="number" id="telefone" class="input-padrao" placeholder="(XX) XXXX-XXXX">
 
                 <label for="mensagem"> Digite Aqui Sua Mensagem </label>
                 <textarea id="mensagem" class="input-padrao"></textarea>
 
-                <div>
-                    <p>Como prefere o nosso contato?</p>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
 
                     <label><input type="radio"  value="email" name="contato"> Email </label>
                     
                     <label><input type="radio"  value="telefone" name="contato"> Telefone </label>
                     
-                    <label ><input type="radio" value="whatsapp" name="contato"> Whatsapp </label>                   
-                </div>
+                    <label ><input type="radio" value="whatsapp" name="contato" checked> Whatsapp </label>                   
+                </fieldset>
 
-                <div>
+                <fieldset>
+                    <legend>Qual Horário Gostaria De Ser Atendido? </legend>
                     <select>
-                        <p> Qual Horário Gostaria De Ser Atendido? </p>
                         <option> Manhã </option>
                         <option> Tarde </option>
                         <option> Noite </option>
                     </select>
-                </div>
+                </fieldset>
 
-                <div>
+                <fieldset>
                     <label><input type="checkbox" class="checkbox"> Gostaria de receber nossa Newsletter?</label>
-                    <input type="submit" value="Enviar Dados">
-                </div>
+                    <input type="submit" value="Enviar Dados" class="enviar">
+                </fieldset>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Dia </th>
+                            <th> Horário </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Segunda </td>
+                            <td> 08 ~ 20H </td>
+                        </tr>
+                        
+                        <tr>
+                            <td> Quarta </td>
+                            <td> 08 ~ 20H </td>
+                        </tr>
+
+                        <tr>
+                            <td> Sexta </td>
+                            <td> 08 ~ 20H </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                    
             </form>
         </main>
 
         <footer>
-            <img src="imagens/logo-branco.png">
+            <img src="imagens/logo-branco.png" alt="Logo da Barbearia Alura">
             <p class="copyright">&#169; Copyright Barbearia Alura - 2019</p>
         </footer>
     </body>
